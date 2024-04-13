@@ -1,0 +1,121 @@
+.loginformcontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+ /* Define the background image and gradient */
+ background: url('../../../public/images/Untitled design.png');
+ background-size: cover; /* Ensure the background image covers the entire element */
+
+
+}
+.loginform {
+position: absolute;
+left: 900px;
+  width: 450px;
+    height: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background: transparent;
+
+box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+/* backdrop-filter: blur( 5px );
+-webkit-backdrop-filter: blur( 5px ); */
+border-radius: 10px;
+               
+}
+
+
+
+.loginform:hover{
+  transform: scale(1.05);
+  transition: 1s ease-in-out;
+  }
+  
+  /* Styles for the form fields and labels */
+.loginform div {
+    margin-bottom: 25px;
+  }
+  
+.loginform div label {
+    display: block;
+    font-weight: bold;
+    color: #000b12;
+    margin-bottom: 2px;
+  }
+  
+.loginform div input {
+    width: 100%;
+    padding: 10px 0px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 16px;
+    padding-left: 2px;
+  }
+  
+  /* Styles for error messages */
+ .loginform div span {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+  }
+  
+  /* Styles for the submit button */
+.loginform  button {
+    background-color:  #119bbe;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+ .loginform button:hover {
+    background-color: #ffffff;
+    color: #000b12;
+  }
+
+ .loginform .buttonlogin:hover{
+    color: rgb(255, 255, 255);
+  }
+
+  .h1login{
+    color: #000b12;
+  }
+
+  .submit{
+    color: #000000;
+    font-weight: 700;
+    border-bottom: 40px;
+    border-radius: 5px;
+  }
+
+
+  .designation-style{
+    
+    border: 1px solid white;
+  }
+  .image-style{
+    border: 1px solid white;
+  }
+  .url-style{
+    
+    border: 1px solid white;
+  }
+  .name-style{
+    border: 1px solid white;
+  }
+
+  .image-drop{
+    border: 1px solid #2A4A5E;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #119bbe;
+  }
+

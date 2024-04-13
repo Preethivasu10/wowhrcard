@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins';
+}
+.App{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+.certificatecontainer{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+.leftcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.rightcontainer{
+    position: absolute;
+    display: flex;
+    right: 25px;
+    top:25px;
+}
+.rightcontainer button{
+    border: none;
+    padding:15px 20px;
+    background: blue;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+}
+.rightcontainer button:hover{
+    scale: 1.1;
+    background: rgb(0, 153, 255);
+    cursor: pointer;
+}
+.certificate{
+    height: 520px;
+    width: 900px;
+    border-radius: 20px;
+    background: url(../public/images/bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.ribbon{
+    position: relative;
+    top: 15px;
+    left: 400px;
+    height: 50px;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 360px;
+    left: 600px;
+}
+.links a{
+    color: white;
+    font-size: 30px;
+}
+.socialmedia{
+    display: flex;
+    height: fit-content;
+    gap: 10px;
+}
+.socialmedia h2{
+    color: white;
+    margin: 0;
+}
+.socialmedia .icons{
+    display: flex;
+    background: white;
+    gap:5px;
+    height: 38px;
+    padding: 0px 5px;
+}
+.namecontainer{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0px;
+    gap: 10px;
+    left: 300px;
+}
+.namecontainer .name{
+    height: 40px;
+    width: 400px;
+    border: none;
+    font-size: 28px;
+    background: transparent;
+    border-bottom: 2px solid black;
+}
+.namecontainer p{
+    border: none;
+    font-size: 16px;
+    background: transparent;
+    margin: 0px;
+}
+.linkedin{
+    height: 50px;
+    width: 300px;
+    border: none;
+    font-size: 16px;
+}
+.dpcontainer{
+    position: relative;
+    height: 250px;
+    width: 200px;
+    top: -200px;
+    left: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+
+}
+.dpcontainer img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

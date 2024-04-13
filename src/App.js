@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import CertificateContainer from './components/certificate/CertificateContainer';
+import html2pdf from 'html2pdf.js';
+import Login from './components/login/Login';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route index element={<Login></Login>}></Route>
+        <Route path='ProudMemberCard' element={<CertificateContainer></CertificateContainer>}></Route>
+      </Routes>
     </div>
   );
 }
