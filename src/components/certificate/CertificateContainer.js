@@ -21,7 +21,7 @@ function CertificateContainer() {
     const opt = {
     
         margin: [0.5, 0.7], // Setting the top and bottom margins, you can adjust the values to find the optimal centering
-        filename: 'certificate.pdf',
+        filename: 'ProudMemberCard.pdf',
         image: { type: 'png', quality: 1 },
         html2canvas: { scale: 2 },
         jsPDF: { unit: 'in', format: 'letter', orientation: 'landscape' },
