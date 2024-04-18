@@ -13,11 +13,20 @@ function CertificateContainer() {
     const [profilePicture, setProfilePicture] = useState(authContext.dp || '');
     const [linkedinURL, setLinkedinURL] = useState(authContext.Linkedin || '');
     
+<<<<<<< HEAD
     const certificateRef = useRef(null);
 
     const getLinkedInName = (url) => {
         const parts = url.split('/');
         return parts[4];
+=======
+        margin: [0.5, 0.7], // Setting the top and bottom margins, you can adjust the values to find the optimal centering
+        filename: 'ProudMemberCard.pdf',
+        image: { type: 'png', quality: 1 },
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: 'in', format: 'letter', orientation: 'landscape' },
+        pagebreak: { mode: ['avoid-all'] },
+>>>>>>> f1c7bd585446c90dfb094cac3332e81a937882ef
     };
 
     // Function to handle saving data and downloading the card
